@@ -7,9 +7,9 @@
     "node": ">= 18"
   },
   "scripts": {
-    "prod": "node build/server.js",
+    "prod": "ts-node build/server.js",
     "dev": "tsx src/server.ts",
-    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
+    "knex": "ts-node --no-warnings --loader ./node_modules/knex/bin/cli.js",
     "test": "vitest",
     "build": "tsup src --out-dir build",
     "lint": "eslint src --ext .ts --fix"
