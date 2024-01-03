@@ -9,7 +9,7 @@
   "scripts": {
     "prod": "ts-node build/server.js",
     "dev": "tsx src/server.ts",
-    "knex": "ts-node --loader ./node_modules/knex/bin/cli.js",
+    "knex": "ts-node ./node_modules/knex/bin/cli.js",
     "test": "vitest",
     "build": "tsup src --out-dir build",
     "lint": "eslint src --ext .ts --fix"
